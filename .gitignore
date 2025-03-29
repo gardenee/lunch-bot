@@ -1,0 +1,49 @@
+# Python 가상환경
+venv/
+env/
+ENV/
+
+# Python 바이트 코드 파일
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 분포 / 패키징
+dist/
+build/
+*.egg-info/
+*.egg
+
+# 환경 변수 파일 - 민감한 정보 포함
+.env
+.env.*
+!.env.example
+
+# IDE 관련 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 로그 파일
+*.log
+logs/
+
+# 임시 파일
+tmp/
+temp/
+
+# 테스트 관련
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# 기타 파일
+.mypy_cache/
+.dmypy.json
+dmypy.json 
