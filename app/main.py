@@ -1,9 +1,14 @@
 from fastapi import FastAPI
-from app.api.api import api_router
+from fastapi.routing import APIRouter
+from app.api import lunch_bot
 
 app = FastAPI(title="LunchBot Client")
 
+api_router = APIRouter()
+api_router.include_router(lunch_bot.router, prefix="/lunch-bot", tags=["lunch-bot"])
+
 app.include_router(api_router)
+
 
 if __name__ == "__main__":
     import uvicorn
